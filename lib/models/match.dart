@@ -41,7 +41,7 @@ class Match {
 
   factory Match.fromJson(Map<String, dynamic> json) {
     return Match(
-      id: json['id'] as String?,
+      id: json['_id'] as String?,
       homeTeamId: json['home_team_id'] as String,
       awayTeamId: json['away_team_id'] as String,
       homeTeamName: json['home_team_name'] as String,

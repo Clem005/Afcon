@@ -324,7 +324,7 @@ class _AdminPageState extends State<AdminPage> {
                   SizedBox(
                     height: 40,
                     child: ElevatedButton(
-                      onPressed: _isLoading ? null : () => _simulateMatch(match.id!),
+                      onPressed: _isLoading || match.id == null? null : () => _simulateMatch(match.id!), 
                       child: const Text('Simulate'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: accentPurple,
